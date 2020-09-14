@@ -14,5 +14,24 @@ function timer(){
         secHeading.innerHTML=sec;
         msec=0;
     }
+    else if(sec>=60)
+    {
+        min++
+        minHeading.innerHTML=min;
+        sec=0;        
+    }
 }
-interval=setInterval(timer,10)
+function start(){
+    interval=setInterval(timer,10)
+}
+function stop(){
+    clearInterval(interval)
+}
+function reset(){
+    min=0;
+    sec=0;
+    msec=0;
+    minHeading.innerHTML=min;
+    secHeading.innerHTML=sec;
+    msecHeading.innerHTML=msec;
+}

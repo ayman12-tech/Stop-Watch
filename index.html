@@ -10,6 +10,9 @@
 body{
     background-color: pink;
     text-align:center;
+    margin:0px;
+    width:100%;
+    font-family: 'Tenor Sans', sans-serif;
 }
 h1{
     font-size:50px;
@@ -21,8 +24,13 @@ h1{
 h2{
     font-size:50px;
     color:black;
-    font-family:Verdana;
+    {% comment %} font-family:Verdana; {% endcomment %}
 }
+
+.ar{
+    padding-top:340px;
+}
+
 
 </style>
 <body>
@@ -35,11 +43,20 @@ h2{
         <h1 id="msec">0</h1>
     </div>
     <div>
-        <button>Start</button>
-        <button>Stop</button>
-        <button>Reset</button>
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
 
     </div>
+    <footer class="page-footer font-small ar">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://github.com/ayman12-tech/" target="_blank"> Syeda Ayman Maqsood</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
     <script src="ariz.js"></script>
 </body>
 </html>
